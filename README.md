@@ -1,6 +1,6 @@
 # Hepsiemlak-Java-Spring-Bootcamp-HW1
 
-2) Java' da çoklu kalıtım mümkün değildir. Bunun nedenleri, olması durumunda karşılaşılacak problemler ve hangi dillerin buna izin verdiğini ve Java' da bunu Object-Oriented prensipleri ile sağlayabilip sağlayamayabileceğimizi yazınız.
+2) Java' da çoklu kalıtım mümkün değildir. Bunun nedenleri, olması durumunda karşılaşılacak problemler, hangi dillerin buna izin verdiğini ve Java' da bunu Object-Oriented prensipleri ile sağlayabilip sağlayamayabileceğimizi yazınız.
 
 Çoklu kalıtımı destekleyen C++, Python, Perl gibi dillerin yanında Java çoklu kalıtımı desteklemez. Öncelikle kalıtımdan bahsetmek gerekirse, kalıtım, bir sınıfın diğer sınıflara özelliklerini aktarabilmesidir. Özellik aktaran sınıf base class, özellikleri alan sınıf ise subclass olarak adlandırılır. Bu şekilde hiyerarşik bir yapı kurulur.
 
@@ -37,7 +37,7 @@ B ve C sınıfları, A sınıfından kalıtılmış olsun. D sınıfı da B ve C
 
 Bunların yanında çoklu kalıtımın avantajları da bulunur. Örneğin bir adaptör deseninde çoklu kalıtımın yararlarını gözlemleyebiliriz. Bir classın basşka bir class tarafından uyarlanmasına izin verir. Dikey bir hiyerarşide çoklu kalıtım avantajlıdır. Bir kümenin özellikleri diğer kümenin özelliklerine bağlı olmaz. Ancak diamond problemindeki gibi bir hiyerarşide, dikeylik gözlenmez ve bu durum çoklu kalıtımı dezavantaja dönüştürür. 
 
-3) Bu soru için oluşturduğum modelde beş tane entity bulunmaktadır. Bunlar Kullanıcı, İlan, Favori, Kayıtlı Arama ve Mesaj classlarıdır. Yapıdan kısaca bahsetmem gerekirse, her kullanıcı bir mail ve şifreye sahiptir. Her ilan bir kullanıcıya, her favori bir ilan ve bir kullanıcıya, her kayıtlı arama bir kullanıcı ve aramanın gönderildiği kullanıcıya, her mesaj bir kullanıcıya ve mesajın gönderildiği kullanıcıya sahiptir. Favorilenen tüm ilanlar favori küme yapısında, kaydedilen her kullanıcı kullanıcı küme yapısında, eklenen her ilan ilan listesinde, gönderilen her mesaj mesaj listesinde tutulmaktadır. 
+3) Bu soru için oluşturduğum modelde beş tane entity bulunmaktadır. Bunlar Kullanıcı, İlan, Favori, Kayıtlı Arama ve Mesaj classlarıdır. Yapıdan kısaca bahsetmem gerekirse, her kullanıcı bir mail ve şifreye sahiptir. Her ilan bir kullanıcıya, her favori, bir ilan ve bir kullanıcıya, her kayıtlı arama, bir kullanıcı ve aramanın gönderildiği kullanıcıya, her mesaj, bir kullanıcıya ve mesajın gönderildiği kullanıcıya sahiptir. Favorilenen tüm ilanlar favori küme yapısında, kaydedilen her kullanıcı, kullanıcı küme yapısında, eklenen her ilan, ilan listesinde, gönderilen her mesaj, mesaj listesinde tutulmaktadır. 
 
 Classlar içinde bulunan attributeler encapsulation yöntemi ile kapsüllenmiştir. Sorudaki isterler için, encapsule edilen ilgili attributelere, return değeri verilmiş ve bu şekilde isterler tamamlanmıştır. Örneğin, bir favori nesnesi içinde aynı zamanda bir kullanıcı ve bir ilan tutmaktadır. İstenen bir kullanıcının favorilediği ilanlar, favori kümesinde foreach ile gezilerek, her favorinin kullanıcı kontrolü encapsule method ile yapılarak, encapsule edilen methodun return değeri ile istenen kullanıcı maili karşılaştırması ile yapılmıştır. Uygulamanın isterleri, temel olarak encapsulation ile gerçekleştirilmiştir. 
 
